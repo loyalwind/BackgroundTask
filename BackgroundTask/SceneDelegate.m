@@ -74,7 +74,6 @@
     // to restore the scene back to its current state.
     NSLog(@"%s", __func__);
 //    [self.bgTask startBgRuning];
-    
     [self.audioTask startBgRuning];
 }
 
