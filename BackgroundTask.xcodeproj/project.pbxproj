@@ -14,6 +14,11 @@
 		A0CB47622987AFFF007CF7EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0CB47612987AFFF007CF7EC /* Assets.xcassets */; };
 		A0CB47652987AFFF007CF7EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0CB47632987AFFF007CF7EC /* LaunchScreen.storyboard */; };
 		A0CB47682987AFFF007CF7EC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A0CB47672987AFFF007CF7EC /* main.m */; };
+		A0CB477F2988C8DF007CF7EC /* WJBackgroundShortlyTask.m in Sources */ = {isa = PBXBuildFile; fileRef = A0CB477E2988C8DF007CF7EC /* WJBackgroundShortlyTask.m */; };
+		A0CB4782298A12C4007CF7EC /* WJBackgroundTask.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A0CB4781298A12C4007CF7EC /* WJBackgroundTask.bundle */; };
+		A0CB4788298C9CB9007CF7EC /* WJAudioManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A0CB4787298C9CB9007CF7EC /* WJAudioManager.m */; };
+		A0CB478B298CB599007CF7EC /* WJBackgroundLonglyTask.m in Sources */ = {isa = PBXBuildFile; fileRef = A0CB478A298CB599007CF7EC /* WJBackgroundLonglyTask.m */; };
+		A0D42837299092EF000637E0 /* WJBackgroundAudioTask.m in Sources */ = {isa = PBXBuildFile; fileRef = A0CB4784298A69C3007CF7EC /* WJBackgroundAudioTask.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +34,15 @@
 		A0CB47642987AFFF007CF7EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A0CB47662987AFFF007CF7EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A0CB47672987AFFF007CF7EC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A0CB477D2988C8DF007CF7EC /* WJBackgroundShortlyTask.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WJBackgroundShortlyTask.h; sourceTree = "<group>"; };
+		A0CB477E2988C8DF007CF7EC /* WJBackgroundShortlyTask.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WJBackgroundShortlyTask.m; sourceTree = "<group>"; };
+		A0CB4781298A12C4007CF7EC /* WJBackgroundTask.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = WJBackgroundTask.bundle; sourceTree = "<group>"; };
+		A0CB4783298A69C2007CF7EC /* WJBackgroundAudioTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJBackgroundAudioTask.h; sourceTree = "<group>"; };
+		A0CB4784298A69C3007CF7EC /* WJBackgroundAudioTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJBackgroundAudioTask.m; sourceTree = "<group>"; };
+		A0CB4786298C9CB9007CF7EC /* WJAudioManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WJAudioManager.h; sourceTree = "<group>"; };
+		A0CB4787298C9CB9007CF7EC /* WJAudioManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WJAudioManager.m; sourceTree = "<group>"; };
+		A0CB4789298CB599007CF7EC /* WJBackgroundLonglyTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJBackgroundLonglyTask.h; sourceTree = "<group>"; };
+		A0CB478A298CB599007CF7EC /* WJBackgroundLonglyTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJBackgroundLonglyTask.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +75,7 @@
 		A0CB47542987AFFE007CF7EC /* BackgroundTask */ = {
 			isa = PBXGroup;
 			children = (
+				A0CB4780298A128F007CF7EC /* WJBackgroundTask */,
 				A0CB47552987AFFE007CF7EC /* AppDelegate.h */,
 				A0CB47562987AFFE007CF7EC /* AppDelegate.m */,
 				A0CB47582987AFFE007CF7EC /* SceneDelegate.h */,
@@ -74,6 +89,22 @@
 				A0CB47672987AFFF007CF7EC /* main.m */,
 			);
 			path = BackgroundTask;
+			sourceTree = "<group>";
+		};
+		A0CB4780298A128F007CF7EC /* WJBackgroundTask */ = {
+			isa = PBXGroup;
+			children = (
+				A0CB4786298C9CB9007CF7EC /* WJAudioManager.h */,
+				A0CB4787298C9CB9007CF7EC /* WJAudioManager.m */,
+				A0CB4783298A69C2007CF7EC /* WJBackgroundAudioTask.h */,
+				A0CB4784298A69C3007CF7EC /* WJBackgroundAudioTask.m */,
+				A0CB4789298CB599007CF7EC /* WJBackgroundLonglyTask.h */,
+				A0CB478A298CB599007CF7EC /* WJBackgroundLonglyTask.m */,
+				A0CB477D2988C8DF007CF7EC /* WJBackgroundShortlyTask.h */,
+				A0CB477E2988C8DF007CF7EC /* WJBackgroundShortlyTask.m */,
+				A0CB4781298A12C4007CF7EC /* WJBackgroundTask.bundle */,
+			);
+			path = WJBackgroundTask;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -133,6 +164,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0CB4782298A12C4007CF7EC /* WJBackgroundTask.bundle in Resources */,
 				A0CB47652987AFFF007CF7EC /* LaunchScreen.storyboard in Resources */,
 				A0CB47622987AFFF007CF7EC /* Assets.xcassets in Resources */,
 				A0CB47602987AFFE007CF7EC /* Main.storyboard in Resources */,
@@ -146,10 +178,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0D42837299092EF000637E0 /* WJBackgroundAudioTask.m in Sources */,
 				A0CB475D2987AFFE007CF7EC /* ViewController.m in Sources */,
 				A0CB47572987AFFE007CF7EC /* AppDelegate.m in Sources */,
 				A0CB47682987AFFF007CF7EC /* main.m in Sources */,
+				A0CB477F2988C8DF007CF7EC /* WJBackgroundShortlyTask.m in Sources */,
+				A0CB478B298CB599007CF7EC /* WJBackgroundLonglyTask.m in Sources */,
 				A0CB475A2987AFFE007CF7EC /* SceneDelegate.m in Sources */,
+				A0CB4788298C9CB9007CF7EC /* WJAudioManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +328,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JJA4BUEX79;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BackgroundTask/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -318,6 +355,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JJA4BUEX79;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BackgroundTask/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

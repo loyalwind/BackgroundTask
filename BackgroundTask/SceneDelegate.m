@@ -6,14 +6,32 @@
 //
 
 #import "SceneDelegate.h"
+#import "WJBackgroundShortlyTask.h"
+#import "WJBackgroundAudioTask.h"
+#import <AVFAudio/AVFAudio.h>
 
 @interface SceneDelegate ()
+/** 申请短时间后台任务 */
+@property (nonatomic, strong) WJBackgroundShortlyTask *bgTask;
+/** 申请长时间音频后台任务，需要开启UIBackgroundModes的audio模式*/
+@property (nonatomic, strong) WJBackgroundAudioTask *audioTask;
 
 @end
 
 @implementation SceneDelegate
+- (WJBackgroundShortlyTask *)bgTask {
+    if(!_bgTask) {
+        _bgTask = [[WJBackgroundShortlyTask alloc] init];
+    }
+    return _bgTask;
+}
 
-
+- (WJBackgroundAudioTask *)audioTask {
+    if(!_audioTask) {
+        _audioTask = [[WJBackgroundAudioTask alloc] initWithInterval:5];
+    }
+    return _audioTask;
+}
 - (void)scene:(UIScene *)scene willConnectToSession:(UISceneSession *)session options:(UISceneConnectionOptions *)connectionOptions {
     // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
     // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
@@ -44,6 +62,9 @@
 - (void)sceneWillEnterForeground:(UIScene *)scene {
     // Called as the scene transitions from the background to the foreground.
     // Use this method to undo the changes made on entering the background.
+    NSLog(@"%s", __func__);
+//    [self.bgTask stopBgRuning];
+    [self.audioTask stopBgRuning];
 }
 
 
@@ -51,6 +72,10 @@
     // Called as the scene transitions from the foreground to the background.
     // Use this method to save data, release shared resources, and store enough scene-specific state information
     // to restore the scene back to its current state.
+    NSLog(@"%s", __func__);
+//    [self.bgTask startBgRuning];
+    
+    [self.audioTask startBgRuning];
 }
 
 
